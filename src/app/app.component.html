@@ -1,5 +1,8 @@
-<p>This is me making my project another time</p>
-
-<h2>{{title}}</h2>
-<p>My name is {{name}}</p>
-<p>My Favourite car is {{favCar}}</p>
+<h2>Pet Shelter</h2>
+<div *ngFor="let dog of dogs">
+  <h3>{{dog.name}}</h3>
+  <p>{{dog.breed}}</p>
+  <p>{{dog.age}}</p>
+  <p>{{dog.weight}}</p>
+  <p>{{dog.isAdopted}}</p>
+</div>

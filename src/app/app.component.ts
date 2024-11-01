@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Dog } from './models/dog';
 import { NgFor } from '@angular/common';
+import { DogListComponent } from "./dog-list/dog-list.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,NgFor],
+  imports: [RouterOutlet, NgFor, DogListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

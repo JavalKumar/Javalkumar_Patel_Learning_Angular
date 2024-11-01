@@ -1,1 +1,8 @@
-<p>dog-list-item works!</p>
+<div *ngIf="dogs" class="dog-details">
+    <h2>Dog Details</h2>
+    <p><strong>Name:</strong> {{ dogs.name }}</p>
+    <p><strong>Breed:</strong> {{ dogs.breed}}</p>
+    <p><strong>Age:</strong> {{ dogs.age}}</p>
+    <p><strong>Weight:</strong> {{ dogs.weight }}</p>
+    <p><strong>isAdopted?:</strong> {{ dogs.isAdopted }}</p>
+</div>

@@ -1,28 +1,15 @@
-
 <div>
-
-    <h2>Login Information Of Users</h2>
     <table>
-      <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Contacts</th>
-        <th>Admin</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr *NgFor="let dog1 of dogs" (click)="selectDog(dog1)">
-        <td>{{ dog1.id }}</td>
-        <td>{{ dog1.name }}</td>
-        <td>{{ dog1.email }}</td>
-        <td>{{ dog1.contacts }}</td>
-        <td>{{ dog1.Admin ? 'Yes' : 'No' }}</td>
-      </tr>
-      </tbody>
+        <tbody>
+            <tr *ngFor="let doggy of dogs" (click)="selectDog(doggy)">
+                <td>{{doggy.name}}</td>
+                <td>{{doggy.breed}}</td>
+                <td>{{doggy.age}}</td>
+                <td>{{doggy.weight}}</td>
+                <td>{{doggy.isAdopted}}</td>
+            </tr>
+        </tbody>
     </table>
-  
-    <app-dog-list></app-dog-list>
-  </div>
+    <app-dog-list-item *ngIf="selectedDog" [dog]="selectedDog"></app-dog-list-item>
+</div>
   

@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import { Dog } from '../models/dog';
+import { NgForOf } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { DogListItemComponent } from '../dog-list-item/dog-list-item.component';
 
 @Component({
   selector: 'app-dog-list',
   standalone: true,
-  imports: [DogListItemComponent],
+  imports: [NgFor,NgForOf,DogListItemComponent],
   templateUrl: './dog-list.component.html',
   styleUrls: ['./dog-list.component.scss']
 })
 export class DogListComponent {
+  displayedColumns:string[]= ['name', 'breed', 'age', 'weight', 'isAdopted'];
   dogs: Dog[] = [
     { name: 'Rozy', breed: 'Doberman', age: 13, weight: 30, isAdopted: false },
     { name: 'Oreo', breed: 'German Shepherd', age: 1, weight: 6, isAdopted: true },
@@ -22,6 +25,7 @@ export class DogListComponent {
   selectedDog?: Dog;
 
   selectDog(dog: Dog): void {
+    console.log(dog);
     this.selectedDog = dog;
   }
   

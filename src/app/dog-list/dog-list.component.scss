@@ -1,57 +1,57 @@
-/* dog-list.component.scss */
+// /* dog-list.component.scss */
 
-/* Basic table styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
-  }
+// /* Basic table styling */
+// table {
+//     width: 100%;
+//     border-collapse: collapse;
+//     margin: 20px 0;
+//     font-size: 18px;
+//     text-align: left;
+//   }
   
-  /* Thead styling */
-  thead {
-    background-color: #4CAF50; /* Header background color */
-    color: white; /* Header text color */
-  }
+//   /* Thead styling */
+//   thead {
+//     background-color: #4CAF50; /* Header background color */
+//     color: white; /* Header text color */
+//   }
   
-  th {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left; /* Align text to the left */
-    font-weight: bold; /* Make header text bold */
-  }
+//   th {
+//     padding: 12px;
+//     border: 1px solid #ddd;
+//     text-align: left; /* Align text to the left */
+//     font-weight: bold; /* Make header text bold */
+//   }
   
-  /* Row styling */
-  tr {
-    transition: background-color 0.3s; /* Smooth transition for hover */
-  }
+//   /* Row styling */
+//   tr {
+//     transition: background-color 0.3s; /* Smooth transition for hover */
+//   }
   
-  /* Row hover effect */
-  tr:hover {
-    background-color: #f1f1f1; /* Light gray on hover */
-  }
+//   /* Row hover effect */
+//   tr:hover {
+//     background-color: #f1f1f1; /* Light gray on hover */
+//   }
   
-  /* Selected dog highlight */
-  .selected {
-    background-color: #e0f7fa; /* Light blue for selected dog */
-  }
+//   /* Selected dog highlight */
+//   .selected {
+//     background-color: #e0f7fa; /* Light blue for selected dog */
+//   }
   
-  /* Adopted status styling */
-  td:last-child {
-    text-align: center;
-  }
+//   /* Adopted status styling */
+//   td:last-child {
+//     text-align: center;
+//   }
   
   
   
-  /* Responsive design */
-  @media (max-width: 600px) {
-    table {
-      font-size: 16px; /* Smaller font size on smaller screens */
-    }
+//   /* Responsive design */
+//   @media (max-width: 600px) {
+//     table {
+//       font-size: 16px; /* Smaller font size on smaller screens */
+//     }
   
-    th, td {
-      padding: 8px; /* Reduced padding on smaller screens */
-    }
-  }
+//     th, td {
+//       padding: 8px; /* Reduced padding on smaller screens */
+//     }
+//   }
   

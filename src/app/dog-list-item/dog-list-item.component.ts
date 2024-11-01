@@ -10,5 +10,5 @@ import { NgForOf,NgIf } from '@angular/common';
   styleUrl: './dog-list-item.component.scss'
 })
 export class DogListItemComponent {
-@Input() dogs?:Dog;
+@Input() dog?:Dog;
 }

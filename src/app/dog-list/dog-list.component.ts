@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { Dog } from '../models/dog';
-import { NgForOf } from '@angular/common';
-import { NgFor } from '@angular/common';
 import { DogListItemComponent } from '../dog-list-item/dog-list-item.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-dog-list',
   standalone: true,
-  imports: [NgFor,NgForOf,DogListItemComponent],
+  imports: [CommonModule,DogListItemComponent],
   templateUrl: './dog-list.component.html',
   styleUrls: ['./dog-list.component.scss']
 })
